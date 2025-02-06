@@ -3,85 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>The Unruly Crew - About Us</title>
   <style>
+    /* Base Styling */
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
       color: #333;
       margin: 0;
       padding: 0;
     }
     .container {
-      max-width: 800px;
-      margin: 30px auto;
+      max-width: 900px;
+      margin: 40px auto;
       padding: 20px;
       background: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 2px solid #f5f5f5;
     }
-    h1, h2 {
+    header {
       text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #ff6b6b, #f06595);
+      color: #fff;
+      border-radius: 10px 10px 0 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    h2 {
+      margin: 20px 0 10px;
+      font-size: 2em;
     }
     p {
       line-height: 1.6;
+      margin: 15px 0;
     }
+    
+    /* Author Blocks */
     .author {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #e9ecef;
+      border-radius: 8px;
+      border: 1px solid #dee2e6;
     }
     .author ul {
-      list-style-type: none;
+      list-style: none;
       padding: 0;
     }
     .author ul li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
     }
-    a {
-      color: #1a0dab;
-      text-decoration: none;
+    .author ul li::before {
+      content: "🔥";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    /* Button Styling */
+    .button-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .funny-btn {
+      background: #28a745;
+      border: none;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin: 10px;
+    }
+    .funny-btn:hover {
+      background: #218838;
+    }
+    
+    /* Joke Box */
+    #joke-box {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      background: #fff3cd;
+      border: 1px solid #ffeeba;
+      border-radius: 8px;
+      text-align: center;
+      font-style: italic;
+      color: #856404;
+    }
+    
+    /* Shake Animation */
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    .shake:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>About Us</h1>
-    <p>Welcome to our quirky corner of the internet! We are a small team of misfits who love to entertain, inspire, and occasionally, catch tennis balls mid-air. Get to know the stars behind our content [...]</p>
+    <header>
+      <h1>The Unruly Crew</h1>
+      <p>Misfits, Mayhem, and Marvelous Mayhem!</p>
+    </header>
     
     <div class="author">
       <h2>Khushi</h2>
-      <p><strong>Special Feature:</strong> The golden retriever featured in our emblematic image.</p>
+      <p><strong>Special Feature:</strong> The golden retriever with a bite of sass and a penchant for stealing tennis balls.</p>
       <p><strong>Qualifications:</strong></p>
       <ul>
-        <li>Can write good stuff when bored.</li>
-        <li>Catches tennis balls mid-air with unmatched flair.</li>
-        <li>Starts and ends small fights over petty issues for pure fun.</li>
-        <li>Proudly unmanageable and a self-proclaimed menace to society.</li>
-        <li>Rumored to have invented the art of napping on command.</li>
-        <li>Sometimes, spontaneously performs acrobatic feats in pursuit of squirrels.</li>
+        <li>Writes brilliant content when even napping gets boring.</li>
+        <li>Catches tennis balls mid-air as if gravity were a suggestion.</li>
+        <li>Starts and settles petty squabbles for the sheer thrill of chaos.</li>
+        <li>Proudly unmanageable – a four-legged menace with a heart of gold.</li>
+        <li>Invented midnight dance-offs that defy canine convention.</li>
+        <li>Believes every nap is a revolutionary act against monotony.</li>
       </ul>
     </div>
     
     <div class="author">
       <h2>Nithila</h2>
-      <p><strong>Special Feature:</strong> The elegant grey cat featured in our image, adding an air of mystery and wit.</p>
+      <p><strong>Special Feature:</strong> The enigmatic grey cat whose steely glare and dark humor make even the sunniest day feel delightfully gloomy.</p>
       <p><strong>Qualifications:</strong></p>
       <ul>
-        <li>Possesses an uncanny ability to look regal even in chaotic situations.</li>
-        <li>Expert at delivering perfectly-timed meows and sassy glances.</li>
-        <li>Skilled in the fine art of sunbeam napping.</li>
-        <li>Quick on her paws—whether it’s catching a rogue laser dot or evading a sudden cucumber attack.</li>
-        <li>Maintains an enigmatic aura that’s both amusing and slightly intimidating.</li>
-        <li>Believes that every room should have a designated napping spot, no matter how absurd.</li>
+        <li>Regal enough to silently judge every bad life choice.</li>
+        <li>Delivers meows that echo in your nightmares.</li>
+        <li>Naps with the precision of a seasoned assassin—quiet and lethal.</li>
+        <li>Wields sarcasm like a double-edged sword, leaving wit in her wake.</li>
+        <li>Believes that every pun is a perfectly wrapped grenade waiting to explode.</li>
+        <li>Motto: "I'm not saying I'm dark, but even my shadows run away."</li>
       </ul>
     </div>
     
-    <div class="author">
-      <h2>Keerthana</h2>
-      <p>(Keerthana is also part of our crew, but she claims that she has nothing to do with this lame website.)</p>
+    <div class="button-container">
+      <button class="funny-btn shake" onclick="showJoke()">Click for a Dark, Cheeky Joke</button>
+      <button class="funny-btn shake" onclick="location.reload()">Reset the Madness</button>
     </div>
     
-    <p>We pride ourselves on our creativity, humor, and a relentless drive to bring a smile to your face. Whether it's crafting quirky content or engaging in spontaneous, petty squabbles over who gets [...]</p>
-    <p>Thank you for stopping by and getting to know the eccentric characters behind our work. Have a laugh, explore our site, and maybe even catch a tennis ball yourself!</p>
-    <p style="text-align: center;"><a href="index.html">Back to Home</a></p>
+    <div id="joke-box">
+      <p id="joke-text"></p>
+    </div>
+    
+    <script>
+      function showJoke() {
+        var jokes = [
+          "I tried to be normal once. Worst two minutes ever.",
+          "Life is like a box of chocolates... until you bite into the one filled with dark licorice.",
+          "If my humor is dark, it's only because my coffee is too.",
+          "I'm not lazy, I'm on energy-saving mode. Dark, isn’t it?",
+          "They say laughter is the best medicine. Too bad it’s not covered by insurance."
+        ];
+        var joke = jokes[Math.floor(Math.random() * jokes.length)];
+        document.getElementById('joke-text').innerText = joke;
+        document.getElementById('joke-box').style.display = 'block';
+      }
+    </script>
   </div>
 </body>
 </html>
