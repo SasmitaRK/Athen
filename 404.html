@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background: #007bff;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>404 - Oops!</h1>
+    <p id="error-message">We can't seem to find the page you're looking for.</p>
+    <a class="btn" href="index.html">Go Home</a>
+  </div>
+  
+  <script>
+    // Customize the error message based on the requested URL.
+    const pathname = window.location.pathname.toLowerCase();
+    const errorMessage = document.getElementById('error-message');
+
+    if (pathname.includes('/blog')) {
+      errorMessage.textContent = "Looks like the blog post you're after has vanished into the digital void.";
+    } else if (pathname.includes('/contact')) {
+      errorMessage.textContent = "Our contact page must have taken a coffee break. Try coming back later!";
+    } else {
+      errorMessage.textContent = "Uh oh, the page you're looking for doesn't exist.";
+    }
+  </script>
+</body>
+</html>
