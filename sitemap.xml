@@ -30,13 +30,4 @@
     <changefreq>yearly</changefreq>
     <lastmod>2025-02-07</lastmod>
   </url>
-  <!-- Optionally remove the sitemap self-reference -->
-  <!--
-  <url>
-    <loc>https://sasmitark.github.io/sitemap.xml</loc>
-    <priority>1.0</priority>
-    <changefreq>yearly</changefreq>
-    <lastmod>2025-02-07</lastmod>
-  </url>
-  -->
 </urlset>
