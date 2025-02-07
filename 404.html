@@ -54,9 +54,9 @@
     const pathname = window.location.pathname.toLowerCase();
     const errorMessage = document.getElementById('error-message');
 
-    if (pathname.includes('/blog')) {
+    if (pathname.includes('blog')) {
       errorMessage.textContent = "Looks like the blog post you're after has vanished into the digital void.";
-    } else if (pathname.includes('/contact')) {
+    } else if (pathname.includes('contact')) {
       errorMessage.textContent = "Our contact page must have taken a coffee break. Try coming back later!";
     } else {
       errorMessage.textContent = "Uh oh, the page you're looking for doesn't exist.";
